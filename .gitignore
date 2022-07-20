@@ -1,0 +1,9 @@
+node_modules
+.env
+couchdb
+tmp
+coverage
+
+_in_tests
+tests-in-bash
+z-TODO_done.md

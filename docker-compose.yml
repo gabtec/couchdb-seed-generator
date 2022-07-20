@@ -1,0 +1,16 @@
+---
+version: "3"
+services:
+  couchdb:
+    image: couchdb:3.2.2
+    container_name: couchdb-to-seed
+    restart: unless-stopped
+    environment:
+      - COUCHDB_USER=admin
+      - COUCHDB_PASSWORD=admin
+    ports:
+      #host : container
+      - 5984:5984
+
+#v1 - http://localhost:5984/_utils/fauxton
+#v2 - http://localhost:5984/_utils/

@@ -1,0 +1,31 @@
+{
+  "name": "couchdb-seed-generator",
+  "version": "0.0.1-rc",
+  "description": "This cli tool will allow yout to create seed files to configure couchdb instance, and add design docs per database, to deploy new and up to date couchdn u+instances.",
+  "main": "main.js",
+  "bin": {
+    "couchseed": "./bin/cli.js"
+  },
+  "scripts": {
+    "start": "node main.js",
+    "test": "jest",
+    "cov": "jest --coverage",
+    "seed": "couchdb-bootstrap http://admin:admin@localhost:5984 tmp/bootstrap.js"
+  },
+  "keywords": [
+    "couchdb",
+    "seed",
+    "deploy",
+    "sync"
+  ],
+  "author": "Gabriel Martins",
+  "license": "MIT",
+  "devDependencies": {
+    "couchdb-bootstrap": "^15.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.26.1",
+    "jest": "^28.1.1",
+    "yargs": "^17.5.1"
+  }
+}
